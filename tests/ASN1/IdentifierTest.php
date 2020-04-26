@@ -32,8 +32,8 @@ class IdentifierTest extends ASN1TestCase
         $this->assertEquals('ASN.1 Bit String', Identifier::getName(Identifier::BITSTRING));
         $this->assertEquals('ASN.1 Octet String', Identifier::getName(Identifier::OCTETSTRING));
         $this->assertEquals('ASN.1 NULL', Identifier::getName(Identifier::NULL));
-        $this->assertEquals('ASN.1 Object Identifier', Identifier::getName(Identifier::OBJECT_IDENTIFIER));
-        $this->assertEquals('ASN.1 Object Descriptor', Identifier::getName(Identifier::OBJECT_DESCRIPTOR));
+        $this->assertEquals('ASN.1 ASNObject Identifier', Identifier::getName(Identifier::OBJECT_IDENTIFIER));
+        $this->assertEquals('ASN.1 ASNObject Descriptor', Identifier::getName(Identifier::OBJECT_DESCRIPTOR));
         $this->assertEquals('ASN.1 External Type', Identifier::getName(Identifier::EXTERNAL));
         $this->assertEquals('ASN.1 Real', Identifier::getName(Identifier::REAL));
         $this->assertEquals('ASN.1 Enumerated', Identifier::getName(Identifier::ENUMERATED));

@@ -10,7 +10,7 @@
 
 namespace FG\ASN1;
 
-class UnknownObject extends Object
+class UnknownObject extends ASNObject
 {
     /** @var string */
     private $value;
@@ -28,7 +28,7 @@ class UnknownObject extends Object
         }
 
         $this->identifier = $identifier;
-        $this->value = "Unparsable Object ({$contentLength} bytes)";
+        $this->value = "Unparsable ASNObject ({$contentLength} bytes)";
         $this->setContentLength($contentLength);
     }
 

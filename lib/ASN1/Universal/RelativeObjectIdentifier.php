@@ -46,7 +46,7 @@ class RelativeObjectIdentifier extends ObjectIdentifier implements Parsable
         try {
             $oidString = self::parseOid($binaryData, $offsetIndex, $contentLength);
         } catch (ParserException $e) {
-            throw new ParserException('Malformed ASN.1 Relative Object Identifier', $e->getOffset());
+            throw new ParserException('Malformed ASN.1 Relative ASNObject Identifier', $e->getOffset());
         }
 
         $parsedObject = new self($oidString);

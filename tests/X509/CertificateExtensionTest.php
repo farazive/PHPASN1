@@ -57,7 +57,7 @@ class CertificateExtensionTest extends ASN1TestCase
         $object->addSubjectAlternativeNames($sans);
 
         $sizeOfFirstExtensionSequence = 2 + $objectIdentifier->getObjectLength() + $sans->getObjectLength();
-        $expectedSize = 2 + 2 + $sizeOfFirstExtensionSequence; // Extensions are sequences of Object identifiers and octet strings that are contained in a sequence which is contained in a set
+        $expectedSize = 2 + 2 + $sizeOfFirstExtensionSequence; // Extensions are sequences of ASNObject identifiers and octet strings that are contained in a sequence which is contained in a set
         $this->assertEquals($expectedSize, $object->getObjectLength());
     }
 

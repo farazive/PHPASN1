@@ -13,12 +13,12 @@ namespace FG\ASN1\Universal;
 use Exception;
 use FG\ASN1\Base128;
 use FG\ASN1\OID;
-use FG\ASN1\Object;
+use FG\ASN1\ASNObject;
 use FG\ASN1\Parsable;
 use FG\ASN1\Identifier;
 use FG\ASN1\Exception\ParserException;
 
-class ObjectIdentifier extends Object implements Parsable
+class ObjectIdentifier extends ASNObject implements Parsable
 {
     protected $subIdentifiers;
     protected $value;
@@ -121,7 +121,7 @@ class ObjectIdentifier extends Object implements Parsable
 
             do {
                 if (0 === $octetsToRead) {
-                    throw new ParserException('Malformed ASN.1 Object Identifier', $offsetIndex - 1);
+                    throw new ParserException('Malformed ASN.1 ASNObject Identifier', $offsetIndex - 1);
                 }
 
                 $octetsToRead--;

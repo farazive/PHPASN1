@@ -170,9 +170,9 @@ class Identifier
             case self::NULL:
                 return 'NULL';
             case self::OBJECT_IDENTIFIER:
-                return 'Object Identifier';
+                return 'ASNObject Identifier';
             case self::OBJECT_DESCRIPTOR:
-                return 'Object Descriptor';
+                return 'ASNObject Descriptor';
             case self::EXTERNAL:
                 return 'External Type';
             case self::REAL:

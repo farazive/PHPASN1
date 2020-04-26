@@ -88,7 +88,7 @@ class RelativeObjectIdentifierTest extends ASN1TestCase
 
     /**
      * @expectedException \FG\ASN1\Exception\ParserException
-     * @expectedExceptionMessage ASN.1 Parser Exception at offset 4: Malformed ASN.1 Relative Object Identifier
+     * @expectedExceptionMessage ASN.1 Parser Exception at offset 4: Malformed ASN.1 Relative ASNObject Identifier
      * @depends testFromBinary
      */
     public function testFromBinaryWithMalformedOID()

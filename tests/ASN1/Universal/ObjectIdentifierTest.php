@@ -105,7 +105,7 @@ class ObjectIdentifierTest extends ASN1TestCase
 
     /**
      * @expectedException \FG\ASN1\Exception\ParserException
-     * @expectedExceptionMessage ASN.1 Parser Exception at offset 4: Malformed ASN.1 Object Identifier
+     * @expectedExceptionMessage ASN.1 Parser Exception at offset 4: Malformed ASN.1 ASNObject Identifier
      * @depends testFromBinary
      */
     public function testFromBinaryWithMalformedOID()
